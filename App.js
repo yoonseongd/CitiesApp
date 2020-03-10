@@ -39,7 +39,7 @@ export default class App extends Component {
     );
   }
 }
-
+//dsaf
 //react native 공식문서 네비게이터 만드는 방법
 
 // import * as React from "react";
