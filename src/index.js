@@ -6,7 +6,7 @@ import { colors } from "./theme";
 
 import { createAppContainer } from "react-navigation";
 import { createStackNavigator } from "react-navigation-stack";
-import { createBottomTabNavigator } from " react-navigation-tabs";
+import { createBottomTabNavigator } from "react-navigation-tabs";
 
 const CitiesNav = createStackNavigator(
   {
