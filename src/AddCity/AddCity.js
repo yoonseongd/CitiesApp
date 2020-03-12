@@ -67,3 +67,34 @@ export default class AddCity extends Component {
     );
   }
 }
+
+const styles = StyleSheet.create({
+  button: {
+    height: 50,
+    backgroundColor: "#666",
+    justifyContent: "center",
+    alignItems: "center",
+    margin: 10
+  },
+  buttonText: {
+    color: "white",
+    fontSize: 18
+  },
+  heading: {
+    color: "white",
+    fontSize: 40,
+    marginBottom: 10,
+    alignSelf: "center"
+  },
+  container: {
+    backgroundColor: colors.primary,
+    flex: 1,
+    justifyContent: "center"
+  },
+  input: {
+    margin: 10,
+    backgroundColor: "white",
+    paddingHorizontal: 8,
+    height: 50
+  }
+});
