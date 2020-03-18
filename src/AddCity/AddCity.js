@@ -7,7 +7,8 @@ import {
   TouchableOpacity
 } from "react-native";
 
-import uuidV4 from "uuid/v4";
+//import uuidV4 from "uuid/v4";
+import uuid from "react-uuid";
 
 import { colors } from "../theme";
 
@@ -27,7 +28,7 @@ export default class AddCity extends Component {
     const city = {
       city: this.state.city,
       country: this.state.country,
-      id: uuidV4(),
+      id: uuid(),
       locations: []
     };
     this.props.screenProps.addCity(city);
