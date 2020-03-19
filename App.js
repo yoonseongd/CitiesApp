@@ -17,7 +17,7 @@ export default class App extends Component {
       return item.id === city.id;
     });
     const chosenCity = this.state.cities[index];
-    chosenCity.location.push(location);
+    chosenCity.locations.push(location);
     const cities = [
       ...this.state.cities.slice(0, index),
       chosenCity,
