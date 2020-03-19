@@ -21,7 +21,7 @@ class City extends React.Component {
       headerTitleStyle: {
         color: "white",
         fontSize: 20,
-        fontWeigh: "400"
+        fontWeight: "400"
       }
     };
   };
@@ -51,18 +51,18 @@ class City extends React.Component {
     return (
       <View style={{ flex: 1 }}>
         <ScrollView
-          contentContainerStyle={[!city.location.length && { flex: 1 }]}
+          contentContainerStyle={[!city.locations.length && { flex: 1 }]}
         >
           <View
             style={[
               styles.locationContainer,
-              !city.location.length && { flex: 1, fustifyContent: "center" }
+              !city.locations.length && { flex: 1, justifyContent: "center" }
             ]}
           >
-            {!city.location.length && (
+            {!city.locations.length && (
               <CenterMessage message="No locations for this city!" />
             )}
-            {city.location.map((location, index) => (
+            {city.locations.map((location, index) => (
               <View key={index} style={styles.locationContainer}>
                 <Text style={styles.locationName}>{location.name}</Text>
                 <Text style={styles.locationInfo}>{location.info}</Text>

@@ -15,23 +15,24 @@ export default class Cities extends React.Component {
   static navigationOptions = {
     title: "Cities",
     headerTitleStyle: {
-      color: "white",
+      color: "black",
       fontSize: 20,
-      fontWeight: "400"
+      fontWeight: "400",
+      alignSelf: "center"
     }
   };
 
   navigate = item => {
-    this.props.navigaiton.navigate("City", { city: item });
+    this.props.navigation.navigate("City", { city: item });
   };
   render() {
     const {
       screenProps: { cities }
     } = this.props;
     return (
-      <ScrollView contentContainerStyle={[!Cities.length && { flex: 1 }]}>
-        <View style={[!Cities.length && { justifyContent: "center", flex: 1 }]}>
-          {!Cities.length && <CenterMessage message="No saved cities!" />}
+      <ScrollView contentContainerStyle={[!cities.length && { flex: 1 }]}>
+        <View style={[!cities.length && { justifyContent: "center", flex: 1 }]}>
+          {!cities.length && <CenterMessage message="No saved cities!" />}
           {cities.map((item, index) => (
             <TouchableWithoutFeedback
               onPress={() => this.navigate(item)}

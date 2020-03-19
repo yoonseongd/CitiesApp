@@ -9,6 +9,7 @@ import {
 
 //import uuidV4 from "uuid/v4";
 import uuid from "react-uuid";
+//uuidv4가 그거말고 레벨 7하라는데  그냥 react-uuid로부터 uuid 모듈 임포트하고 uuidV4 대신 uuid 사용함
 
 import { colors } from "../theme";
 
@@ -25,22 +26,26 @@ export default class AddCity extends Component {
   submit = () => {
     if (this.state.city === "" || this.state.country === "")
       alert("please complete form");
-    const city = {
-      city: this.state.city,
-      country: this.state.country,
-      id: uuid(),
-      locations: []
-    };
-    this.props.screenProps.addCity(city);
-    this.setState(
-      {
-        city: "",
-        country: ""
-      },
-      () => {
-        this.props.navigation.navigate("Cities");
-      }
-    );
+    else {
+      const city = {
+        city: this.state.city,
+        country: this.state.country,
+        id: uuid(),
+        //uuidv4가 그거말고 레벨 7하라는데  그냥 react-uuid로부터 uuid 모듈 임포트하고 uuidV4 대신 uuid 사용함
+
+        locations: []
+      };
+      this.props.screenProps.addCity(city);
+      this.setState(
+        {
+          city: "",
+          country: ""
+        },
+        () => {
+          this.props.navigation.navigate("Cities");
+        }
+      );
+    }
   };
 
   render() {
