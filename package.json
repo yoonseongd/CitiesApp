@@ -8,21 +8,37 @@
     "eject": "expo eject"
   },
   "dependencies": {
+    "@react-native-community/async-storage": "^1.8.1",
     "@react-navigation/native": "^5.0.9",
     "core-js": "^3.6.4",
     "expo": "~36.0.0",
-    "mem": "^6.0.1",
+    "link": "^0.1.5",
+    "minimist": "^1.2.5",
     "react": "~16.9.0",
     "react-dom": "~16.9.0",
-    "react-native-web": "~0.11.7"
-  },
-  "optionalDependencies": {
-    "fsevents": "*"
+    "react-native-reanimated": "~1.4.0",
+    "react-native-web": "~0.11.7",
+    "react-navigation": "^4.2.2",
+    "react-navigation-stack": "^2.2.3",
+    "react-uuid": "^1.0.2",
+    "util": "^0.12.2",
+    "uuid": "^7.0.2"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
+    "@react-native-community/masked-view": "0.1.5",
+    "@react-navigation/stack": "^5.1.1",
     "babel-preset-expo": "~8.0.0",
-    "react-native": "^0.61.5"
+    "metro-react-native-babel-preset": "^0.58.0",
+    "react-native": "^0.61.5",
+    "react-native-gesture-handler": "~1.5.0",
+    "react-native-safe-area-context": "0.6.0",
+    "react-native-screens": "^2.3.0",
+    "react-navigation-tabs": "^2.8.2",
+    "xxxxx": "^1.0.3"
   },
-  "private": true
+  "private": true,
+  "optionalDependencies": {
+    "fsevents": "^2.1.2"
+  }
 }
