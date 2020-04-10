@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "Blank Template",
+    "name": "CitisApp",
     "slug": "CitiesApp",
     "privacy": "public",
     "sdkVersion": "36.0.0",
@@ -25,6 +25,8 @@
     ],
     "ios": {
       "supportsTablet": true
-    }
+    },
+    "description": "This app store country, city, location, information where i travel.",
+    "githubUrl": "https://github.com/yoonseongd/CitiesApp"
   }
 }
